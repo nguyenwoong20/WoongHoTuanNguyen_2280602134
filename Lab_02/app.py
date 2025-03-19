@@ -19,7 +19,7 @@ def caeser_encrypt():
     key = int(request.form['inputKeyPlain'])
     Caeser = CaeserCipher()
     
-    encrypted_text = Caeser.encrpyt_text(text, key)
+    encrypted_text = Caeser.encrypt_text(text, key)
     return f"text: {text}<br>key: {key}<br>encrypted text: {encrypted_text}"
 
 @app.route("/decrypt", methods=['POST'])

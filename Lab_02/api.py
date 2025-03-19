@@ -18,7 +18,7 @@ def caesar_encrypt():
     data = request.json
     plain_text = data['plain_text']
     key = int(data['key'])
-    encrypted_text = caeser_cipher.encrpyt_text(plain_text, key)
+    encrypted_text = caeser_cipher.encrypt_text(plain_text, key)
     return jsonify({'encrypted_text': encrypted_text})
 
 @app.route('/api/caesar/decrypt', methods=['POST'])
@@ -111,4 +111,4 @@ def transposition_decrypt():
 
 #main function
 if __name__ == "__main__":
-    app.run(host ="0.0.0.0", port = 50000, debug=True)
+    app.run(host ="0.0.0.0", port = 5000, debug=True)

@@ -4,7 +4,7 @@ class CaeserCipher:
     def __init__(seft):
         seft.alphabet = ALPHABET
         
-    def encrpyt_text(self, text: str, key: int) -> str:
+    def encrypt_text(self, text: str, key: int) -> str:
         ALPHABET_len = len(self.alphabet)
         text = text.upper()
         encrypted_text = []
